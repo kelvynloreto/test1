@@ -1,9 +1,9 @@
 const generateNewColor= ()=>{
-    let simbolos, color;
-    simbolos = "0123456789ABCDEF";
+    let simbols, color;
+    simbols = "0123456789ABCDEF";
     color = "#";
       for(let i = 0; i < 6; i++){
-      color = color + simbolos[Math.floor(Math.random() * 16)];
+      color = color + simbols[Math.floor(Math.random() * 16)];
      
     }
     return color
