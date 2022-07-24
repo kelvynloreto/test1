@@ -15,11 +15,11 @@ const QuoteBox = ({ randomColor }) => {
   };
 
   return (
-    <article style={bgContainer}>
-      <div className="card_info" style={colorLetter}>
+    <main style={bgContainer}>
+      <section className="card_info" style={colorLetter}>
      
         <p> <i class="fa-solid fa-quote-left"></i>{auxObj.quote}</p>
-        <div className="card_autor">
+        <article className="card_autor">
           <b>{auxObj.author}</b>
           <div className="card_icon-next" style={bgContainer}>
             <box-icon
@@ -28,9 +28,9 @@ const QuoteBox = ({ randomColor }) => {
               color={generateNewColor()}
             ></box-icon>
           </div>
-        </div>
-      </div>
-    </article>
+        </article>
+      </section>
+    </main>
   );
 };
 
