@@ -1,17 +1,15 @@
-import React from 'react'
-import generateNewColor from "../tools/generateNewColor";
+import React from "react";
 
-const NextIcon = ({randomColor}) => {
- 
+const NextIcon = ({ randomColor, color }) => {
   return (
-    <>      <box-icon
-    onClick={randomColor}
-    name="right-arrow-alt"
-    color={generateNewColor()} 
-  ></box-icon> 
+    <>
+      <box-icon
+        onClick={randomColor}
+        name="right-arrow-alt"
+        color={color}
+      ></box-icon>
     </>
-    
-  )
-}
+  );
+};
 
-export default NextIcon
+export default NextIcon;
